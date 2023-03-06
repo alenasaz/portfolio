@@ -4,6 +4,7 @@ import colorShrap2 from '../assets/img/color-sharp2.png';
 import projImg1 from '../assets/img/project-img1.png';
 import projImg2 from '../assets/img/project-img2.png';
 import projImg3 from '../assets/img/project-img3.png';
+import { FormattedMessage } from 'react-intl';
 
 const projects = [
   {
@@ -44,7 +45,10 @@ export const Projects = () => {
       <Container>
         <Row>
           <Col>
-            <h2>Projects</h2>
+            <h2>
+              {' '}
+              <FormattedMessage id='projects_header' />
+            </h2>
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry.

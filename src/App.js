@@ -1,10 +1,10 @@
 import { useState } from 'react';
-import { IntlProvider } from 'react-intl'
+import { IntlProvider } from 'react-intl';
 
 import { NavBar } from './components/NavBar.jsx';
-import {Banner } from './components/Banner.jsx';
+import { Banner } from './components/Banner.jsx';
 import { Skills } from './components/Skills.jsx';
-import {Projects } from './components/Projects.jsx';
+import { Projects } from './components/Projects.jsx';
 import { Contact } from './components/Contact.jsx';
 import { LOCALES } from './locales.js';
 import { messages } from './messages.js';
@@ -15,28 +15,39 @@ function App() {
   const locale = LOCALES.RUSSIAN;
 
   function getInitialLocale() {
-    // получаем сохраненные данные
-    const savedLocale = localStorage.getItem('locale')
-    return savedLocale || LOCALES.ENGLISH
+    const savedLocale = localStorage.getItem('locale');
+    return savedLocale || locale;
   }
 
-  const [currentLocale, setCurrentLocale] = useState(getInitialLocale())
+  const [currentLocale, setCurrentLocale] = useState(getInitialLocale());
+  const [isSwitchOn, setIsSwitchOn] = useState(
+    currentLocale === 'ru-RU' ? true : false
+  );
 
-  const handleChange = ({ target: { value } }) => {
-    setCurrentLocale(value)
-    // сохраняем локацию в хранилище
-    localStorage.setItem('locale', value)
-  }
+  console.log(!isSwitchOn, currentLocale, 'test');
+
+  const handleChange = () => {
+    setIsSwitchOn(!isSwitchOn);
+    setCurrentLocale(!isSwitchOn ? 'ru-RU' : 'en-US');
+    localStorage.setItem('locale', currentLocale);
+  };
 
   return (
-    <IntlProvider locale={locale} defaultLocale={locale} messages={messages[locale]}>
-    <div className="App">
-    <NavBar currentLocale={currentLocale} handleChange={handleChange}/>
-    <Banner/>
-    <Skills/>
-    <Projects/>
-    <Contact/>
-    </div>
+    <IntlProvider
+      locale={currentLocale}
+      defaultLocale={currentLocale}
+      messages={messages[currentLocale]}
+    >
+      <div className='App'>
+        <NavBar
+          currentLocale={currentLocale}
+          checked={isSwitchOn}
+          handleChange={handleChange}
+        />
+        <Banner />
+        <Skills />
+        <Projects />
+      </div>
     </IntlProvider>
   );
 }

@@ -1,27 +1,25 @@
-import { LOCALES } from './locales'
+import { LOCALES } from './locales';
 
 export const messages = {
   [LOCALES.ENGLISH]: {
     welcome: `Welcome to my portfolio`,
-    price_display:
-      'How {n, number, ::currency/USD} is displayed in your selected language',
-    number_display:
-      'This is how {n, number} is formatted in the selected locale',
-    start_today: 'Start Today: {d, date}',
-    // меню
-    about_project: 'About the project',
-    contact_us: 'Contact us'
+    switch_text: 'Russian',
+    position_name: 'Frontend Developer',
+    about_me:
+      'Hello, my name is Alena. I work as a frontend-developer more than 1.5 years. In total in IT industry I work more than 4 years.',
+    skills_header: 'Skills',
+    skills_description: 'I can do such things',
+    projects_header: 'My Projects',
   },
   [LOCALES.RUSSIAN]: {
     welcome: 'Добро пожаловать в мое портфолио',
-    price_display:
-      'Как {n, number, ::currency/RUB} отображается на выбранном языке',
-    number_display:
-      'Вот как {n, number} форматируется на основе выбранной локации',
-    start_today: 'Начни сегодня: {d, date}',
-    // меню
-    about_project: 'О проекте',
-    contact_us: 'Свяжитесь с нами'
+    switch_text: 'Русский',
+    position_name: 'Фронтенд разработчик',
+    about_me:
+      'Привет, меня зовут Алена! Я занимаюсь фронтенд-разработкой больше 1.5 года. В IT больше 4 лет. Я обожаю программирование.',
+    skills_header: 'Навыки',
+    skills_description:
+      'На своем проекте я занималась разработкой системы бизнес-планирования. Я использовала React, Mobx, TypeScript, RestAPI, Sql, CSS. Сейчас ',
+    projects_header: 'Мои проекты',
   },
-
-}
+};
