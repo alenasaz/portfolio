@@ -2,7 +2,12 @@ import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import { Container, Row, Col, Badge } from 'react-bootstrap';
 import skillsIcon from '../assets/img/skills_girl.png';
+import reactIcon from '../assets/img/react.svg';
+import javaScriptIcon from '../assets/img/javascript.svg';
+import sqlIcon from '../assets/img/sql.png';
+import graphQLIcon from '../assets/img/graphql.png';
 import colorSharp from '../assets/img/color-sharp.png';
+import cssIcon from '../assets/img/css.png';
 import { FormattedMessage } from 'react-intl';
 
 const responsive = {
@@ -46,7 +51,7 @@ export const Skills = () => {
                 className='skill-slider'
               >
                 <div className='item'>
-                  <img src={skillsIcon} alt='Image' />
+                  <img src={reactIcon} alt='Image' />
                   <h5>React</h5>
                 </div>
                 <div className='item'>
@@ -54,19 +59,19 @@ export const Skills = () => {
                   <h5>Mobx/Effector</h5>
                 </div>
                 <div className='item'>
-                  <img src={skillsIcon} alt='Image' />
+                  <img src={javaScriptIcon} alt='Image' />
                   <h5>JavaScript/TypeScript</h5>
                 </div>
                 <div className='item'>
-                  <img src={skillsIcon} alt='Image' />
+                  <img src={graphQLIcon} alt='Image' />
                   <h5>GraphQL/RestAPI</h5>
                 </div>
                 <div className='item'>
-                  <img src={skillsIcon} alt='Image' />
+                  <img src={cssIcon} alt='Image' />
                   <h5>TailWind</h5>
                 </div>
                 <div className='item'>
-                  <img src={skillsIcon} alt='Image' />
+                  <img src={sqlIcon} alt='Image' />
                   <h5>SQL</h5>
                 </div>
               </Carousel>

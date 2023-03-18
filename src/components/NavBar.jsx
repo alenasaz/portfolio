@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
 import { Navbar, Nav, Container, Form } from 'react-bootstrap';
-import logo from '../assets/img/logo.svg';
 import telegramIcon from '../assets/img/telegram.svg';
 import linkedinIcon from '../assets/img/linkedin.svg';
+import gitHubIcon from '../assets/img/github.svg';
 import catIcon from '../assets/img/cat.svg';
 
 export const NavBar = ({ checked, currentLocale, handleChange }) => {
@@ -85,6 +85,10 @@ export const NavBar = ({ checked, currentLocale, handleChange }) => {
               </a>
               <a href='https://www.linkedin.com/in/alena-sazanova-23439721a/'>
                 <img src={linkedinIcon} alt='' />
+              </a>
+
+              <a href='https://github.com/alenasaz'>
+                <img src={gitHubIcon} alt='' />
               </a>
             </div>
           </span>
