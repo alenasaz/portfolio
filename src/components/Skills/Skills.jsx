@@ -1,14 +1,15 @@
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import { Container, Row, Col, Badge } from 'react-bootstrap';
-import skillsIcon from '../assets/img/skills_girl.png';
-import reactIcon from '../assets/img/react.svg';
-import javaScriptIcon from '../assets/img/javascript.svg';
-import sqlIcon from '../assets/img/sql.png';
-import graphQLIcon from '../assets/img/graphql.png';
-import colorSharp from '../assets/img/color-sharp.png';
-import cssIcon from '../assets/img/css.png';
+import skillsIcon from '../../assets/img/skills_girl.png';
+import reactIcon from '../../assets/img/react.svg';
+import javaScriptIcon from '../../assets/img/javascript.svg';
+import sqlIcon from '../../assets/img/sql.png';
+import graphQLIcon from '../../assets/img/graphql.png';
+import colorSharp from '../../assets/img/color-sharp.png';
+import cssIcon from '../../assets/img/css.png';
 import { FormattedMessage } from 'react-intl';
+import './Skills.css';
 
 const responsive = {
   superLargeDesktop: {

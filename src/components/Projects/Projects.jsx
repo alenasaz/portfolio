@@ -1,10 +1,11 @@
 import { Container, Row, Col, Nav, Tab } from 'react-bootstrap';
-import { ProjectCard } from './ProjectCard';
-import colorShrap2 from '../assets/img/color-sharp2.png';
-import project1 from '../assets/img/project1.jpg';
-import project2 from '../assets/img/project2.jpg';
-import project3 from '../assets/img/project3.jpg';
+import { ProjectCard } from '../ProjectCard/ProjectCard';
+import colorShrap2 from '../../assets/img/color-sharp2.png';
+import project1 from '../../assets/img/project1.jpg';
+import project2 from '../../assets/img/project2.jpg';
+import project3 from '../../assets/img/project3.jpg';
 import { FormattedMessage } from 'react-intl';
+import './Projects.css';
 
 const projects = [
   {
@@ -13,7 +14,7 @@ const projects = [
     imgUrl: project1,
   },
   {
-    title: 'Business Startup',
+    title: 'System of Bussiness Planing',
     description: 'Design & Development',
     imgUrl: project2,
   },

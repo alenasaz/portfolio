@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import { IntlProvider } from 'react-intl';
 
-import { NavBar } from './components/NavBar.jsx';
-import { Banner } from './components/Banner.jsx';
-import { Skills } from './components/Skills.jsx';
-import { Projects } from './components/Projects.jsx';
-import { Contact } from './components/Contact.jsx';
+import { NavBar } from './components/NavBar/NavBar.jsx';
+import { Banner } from './components/Banner/Banner.jsx';
+import { Skills } from './components/Skills/Skills.jsx';
+import { Projects } from './components/Projects/Projects.jsx';
+import { Contact } from './components/Contact/Contact.jsx';
 import { LOCALES } from './locales.js';
 import { messages } from './messages.js';
 import './App.css';

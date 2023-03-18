@@ -1,9 +1,10 @@
 import { useState, useEffect } from 'react';
 import { Row, Col, Container } from 'react-bootstrap';
 import { ArrowRightCircle } from 'react-bootstrap-icons';
+import './Banner.css';
 // import headerImg from '../assets/img/header-img.svg';
 // import Test from '../assets/img/cone-svgrepo-com.svg';
-import Girl from '../assets/img/gamer.png';
+import Girl from '../../assets/img/gamer.png';
 import { FormattedMessage } from 'react-intl';
 const toRotate = ['Frontend Developer'];
 

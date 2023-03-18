@@ -1,9 +1,10 @@
 import { useState, useEffect } from 'react';
 import { Navbar, Nav, Container, Form } from 'react-bootstrap';
-import telegramIcon from '../assets/img/telegram.svg';
-import linkedinIcon from '../assets/img/linkedin.svg';
-import gitHubIcon from '../assets/img/github.svg';
-import catIcon from '../assets/img/cat.svg';
+import telegramIcon from '../../assets/img/telegram.svg';
+import linkedinIcon from '../../assets/img/linkedin.svg';
+import gitHubIcon from '../../assets/img/github.svg';
+import catIcon from '../../assets/img/cat.svg';
+import './NavBar.css';
 
 export const NavBar = ({ checked, currentLocale, handleChange }) => {
   const [activeLink, setActiveLink] = useState('home');
