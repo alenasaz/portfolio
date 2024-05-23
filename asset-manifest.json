@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.ca7e4e2d.css",
+    "main.js": "/portfolio/static/js/main.91bca204.js",
+    "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/color-sharp.png": "/portfolio/static/media/color-sharp.bea361cfef80fefc2d1e.png",
+    "static/media/color-sharp2.png": "/portfolio/static/media/color-sharp2.c87586c6c2f549cb4aa6.png",
+    "static/media/project4_main.png": "/portfolio/static/media/project4_main.064f8104c36cf11de53a.png",
+    "static/media/project4_history.png": "/portfolio/static/media/project4_history.fdc18dc6d2cdaef08d9a.png",
+    "static/media/banner-bg.png": "/portfolio/static/media/banner-bg.cc1273af450504afe755.png",
+    "static/media/project4_progress.png": "/portfolio/static/media/project4_progress.5e46c0e48b5b6e7fc352.png",
+    "static/media/CentraNo2-Bold.ttf": "/portfolio/static/media/CentraNo2-Bold.2faff7f7d3fc92a2fcd9.ttf",
+    "static/media/CentraNo2-Medium.ttf": "/portfolio/static/media/CentraNo2-Medium.f94be5b326d78bb32b95.ttf",
+    "static/media/CentraNo2-Book.ttf": "/portfolio/static/media/CentraNo2-Book.2b143fa4b734a3584043.ttf",
+    "static/media/footer-bg.png": "/portfolio/static/media/footer-bg.7bd67c0f73571d0acc02.png",
+    "static/media/project1.jpg": "/portfolio/static/media/project1.7ee923fb4de4eebce081.jpg",
+    "static/media/project2.jpg": "/portfolio/static/media/project2.2536768ccce1f3705512.jpg",
+    "static/media/project3.jpg": "/portfolio/static/media/project3.01d47c3ec22bfa02484d.jpg",
+    "static/media/gamer.png": "/portfolio/static/media/gamer.6a1778bcdd7674ac9e60.png",
+    "static/media/contact-img.svg": "/portfolio/static/media/contact-img.62aa99e0f3b968b5d1ce9eb047f34fc7.svg",
+    "static/media/revicons.eot": "/portfolio/static/media/revicons.a77de540a38981833f9e.eot",
+    "static/media/revicons.ttf": "/portfolio/static/media/revicons.57fd05d4ae650374c8de.ttf",
+    "static/media/revicons.woff": "/portfolio/static/media/revicons.e8746a624ed098489406.woff",
+    "static/media/react.svg": "/portfolio/static/media/react.867e22e5a0394f9e99bb018feec45d06.svg",
+    "static/media/telegram.svg": "/portfolio/static/media/telegram.83a0f129d48696e0797541e7e527ceb4.svg",
+    "static/media/cat.svg": "/portfolio/static/media/cat.eb73654b36b4f6bf45bb1336dba11ae4.svg",
+    "static/media/javascript.svg": "/portfolio/static/media/javascript.78960278f6971b4f0ff5c5c99776bf95.svg",
+    "static/media/github.svg": "/portfolio/static/media/github.57a98d60fb3bb11f485452adcaff49eb.svg",
+    "index.html": "/portfolio/index.html",
+    "static/media/linkedin.svg": "/portfolio/static/media/linkedin.1da2c8232df55ea337a6554b851f81cf.svg",
+    "main.ca7e4e2d.css.map": "/portfolio/static/css/main.ca7e4e2d.css.map",
+    "main.91bca204.js.map": "/portfolio/static/js/main.91bca204.js.map",
+    "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ca7e4e2d.css",
+    "static/js/main.91bca204.js"
+  ]
+}
