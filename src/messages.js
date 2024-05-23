@@ -1,27 +1,32 @@
-import { LOCALES } from './locales'
+import { LOCALES } from './locales';
 
 export const messages = {
   [LOCALES.ENGLISH]: {
     welcome: `Welcome to my portfolio`,
-    price_display:
-      'How {n, number, ::currency/USD} is displayed in your selected language',
-    number_display:
-      'This is how {n, number} is formatted in the selected locale',
-    start_today: 'Start Today: {d, date}',
-    // меню
-    about_project: 'About the project',
-    contact_us: 'Contact us'
+    switch_text: 'Russian',
+    position_name: 'Frontend Developer',
+    about_me:
+      'Hello, my name is Alena. I work as a frontend-developer more than 2.5 years. In total in IT industry I work more than 5 years.  mainly worked in the fintech industry. I graduated from the university with a degree in Computer Science. My contact information is as follows: tg: @alenasaz, alenasazanova97@gmail.com',
+    skills_header: 'Skills',
+    projects_navbar: 'Projects',
+    info_navbar: 'Main Info',
+    skills_description:
+      'I was developing a business planning system, as well as a cashback platform for one of the largest banks. I use React, Mobx/Effector, TypeScript, RestAPI, SQL, CSS.',
+    projects_header: 'My Projects',
+    projects_description: 'Some examples of projects',
   },
   [LOCALES.RUSSIAN]: {
     welcome: 'Добро пожаловать в мое портфолио',
-    price_display:
-      'Как {n, number, ::currency/RUB} отображается на выбранном языке',
-    number_display:
-      'Вот как {n, number} форматируется на основе выбранной локации',
-    start_today: 'Начни сегодня: {d, date}',
-    // меню
-    about_project: 'О проекте',
-    contact_us: 'Свяжитесь с нами'
+    switch_text: 'Русский',
+    position_name: 'Фронтенд разработчик',
+    about_me:
+      'Привет, меня зовут Алена! Я занимаюсь фронтенд-разработкой больше 2.5 года. Работаю в IT больше 5 лет. В основном я работала в сфере финтех. Я закончила университет по специальности "Прикладная математика и информатика". Вы можете написать мне в Telegram: @alenasaz или по почте alenasazanova97@gmail.com',
+    skills_header: 'Навыки',
+    projects_navbar: 'Проекты',
+    info_navbar: 'Информация',
+    skills_description:
+      'Я занималась разработкой системы бизнес-планирования, а также реферальной программы для одного из крупнейших банков России. Я использую React, Mobx/Effector, TypeScript, RestAPI, SQL, CSS.',
+    projects_header: 'Мои проекты',
+    projects_description: 'Несколько примеров моих проектов.',
   },
-
-}
+};

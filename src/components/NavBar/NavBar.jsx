@@ -1,15 +1,13 @@
 import { useState, useEffect } from 'react';
 import { Navbar, Nav, Container, Form } from 'react-bootstrap';
-import logo from '../assets/img/logo.svg';
-import navIcon1 from '../assets/img/nav-icon1.svg';
-import navIcon2 from '../assets/img/nav-icon2.svg';
-import navIcon3 from '../assets/img/nav-icon3.svg';
-// import { HashLink } from 'react-router-hash-link';
-// import {
-//   BrowserRouter as Router
-// } from "react-router-dom";
+import telegramIcon from '../../assets/img/telegram.svg';
+import linkedinIcon from '../../assets/img/linkedin.svg';
+import gitHubIcon from '../../assets/img/github.svg';
+import catIcon from '../../assets/img/cat.svg';
+import './NavBar.css';
+import { FormattedMessage } from 'react-intl';
 
-export const NavBar = ({ currentLocale, handleChange }) => {
+export const NavBar = ({ checked, currentLocale, handleChange }) => {
   const [activeLink, setActiveLink] = useState('home');
   const [scrolled, setScrolled] = useState(false);
 
@@ -34,23 +32,26 @@ export const NavBar = ({ currentLocale, handleChange }) => {
   return (
     <Navbar expand='md' className={scrolled ? 'scrolled' : ''}>
       <Container>
-        <Navbar.Brand href='/'>
-          <img src={logo} alt='Logo' />
+        <Navbar.Brand href='/' className='logo'>
+          <img src={catIcon} alt='Logo' />
         </Navbar.Brand>
 
         <Navbar.Toggle aria-controls='basic-navbar-nav'>
-          <span className='navbar-toggler-icon'> ggg</span>
+          <span className='navbar-toggler-icon'></span>
         </Navbar.Toggle>
+
         <Navbar.Collapse id='basic-navbar-nav'>
+          <Form>
+            <Form.Check
+              type='switch'
+              id='custom-switch'
+              label={<FormattedMessage id='switch_text' />}
+              checked={checked}
+              onChange={handleChange}
+              className='navbar-switch'
+            />
+          </Form>
           <Nav className='ms-auto'>
-            <Form>
-              <Form.Check
-                type='switch'
-                id='custom-switch'
-                label='Russian'
-                onChange={handleChange}
-              />
-            </Form>
             <Nav.Link
               href='#home'
               className={
@@ -58,7 +59,7 @@ export const NavBar = ({ currentLocale, handleChange }) => {
               }
               onClick={() => onUpdateActiveLink('home')}
             >
-              Home
+              <FormattedMessage id='info_navbar' />
             </Nav.Link>
             <Nav.Link
               href='#skills'
@@ -67,7 +68,7 @@ export const NavBar = ({ currentLocale, handleChange }) => {
               }
               onClick={() => onUpdateActiveLink('skills')}
             >
-              Skills
+              <FormattedMessage id='skills_header' />
             </Nav.Link>
             <Nav.Link
               href='#projects'
@@ -76,25 +77,22 @@ export const NavBar = ({ currentLocale, handleChange }) => {
               }
               onClick={() => onUpdateActiveLink('projects')}
             >
-              Projects
+              <FormattedMessage id='projects_navbar' />
             </Nav.Link>
           </Nav>
           <span className='navbar-text'>
             <div className='social-icon'>
-              <a href='#'>
-                <img src={navIcon1} alt='' />
+              <a href='https://t.me/alenasaz'>
+                <img src={telegramIcon} alt='' />
               </a>
-              <a href='#'>
-                <img src={navIcon2} alt='' />
+              <a href='https://www.linkedin.com/in/alena-sazanova-23439721a/'>
+                <img src={linkedinIcon} alt='' />
               </a>
-              <a href='#'>
-                <img src={navIcon3} alt='' />
+
+              <a href='https://github.com/alenasaz'>
+                <img src={gitHubIcon} alt='' />
               </a>
             </div>
-
-            <button className='vvd'>
-              <span>Let’s Connect</span>
-            </button>
           </span>
         </Navbar.Collapse>
       </Container>
