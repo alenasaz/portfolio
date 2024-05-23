@@ -73,7 +73,11 @@
 }
 
 .proj-img {
-  height: 220px;
+  height: 250px;
+}
+
+.proj-img-mob {
+  height: 850px;
 }
 .proj-imgbx {
   position: relative;

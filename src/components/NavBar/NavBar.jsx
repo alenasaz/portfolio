@@ -5,6 +5,7 @@ import linkedinIcon from '../../assets/img/linkedin.svg';
 import gitHubIcon from '../../assets/img/github.svg';
 import catIcon from '../../assets/img/cat.svg';
 import './NavBar.css';
+import { FormattedMessage } from 'react-intl';
 
 export const NavBar = ({ checked, currentLocale, handleChange }) => {
   const [activeLink, setActiveLink] = useState('home');
@@ -28,8 +29,6 @@ export const NavBar = ({ checked, currentLocale, handleChange }) => {
     setActiveLink(value);
   };
 
-  console.log(currentLocale, 'currentLocale');
-
   return (
     <Navbar expand='md' className={scrolled ? 'scrolled' : ''}>
       <Container>
@@ -38,19 +37,21 @@ export const NavBar = ({ checked, currentLocale, handleChange }) => {
         </Navbar.Brand>
 
         <Navbar.Toggle aria-controls='basic-navbar-nav'>
-          <span className='navbar-toggler-icon'> ggg</span>
+          <span className='navbar-toggler-icon'></span>
         </Navbar.Toggle>
+
         <Navbar.Collapse id='basic-navbar-nav'>
+          <Form>
+            <Form.Check
+              type='switch'
+              id='custom-switch'
+              label={<FormattedMessage id='switch_text' />}
+              checked={checked}
+              onChange={handleChange}
+              className='navbar-switch'
+            />
+          </Form>
           <Nav className='ms-auto'>
-            <Form>
-              <Form.Check
-                type='switch'
-                id='custom-switch'
-                label='Russian'
-                checked={checked}
-                onChange={handleChange}
-              />
-            </Form>
             <Nav.Link
               href='#home'
               className={
@@ -58,7 +59,7 @@ export const NavBar = ({ checked, currentLocale, handleChange }) => {
               }
               onClick={() => onUpdateActiveLink('home')}
             >
-              Home
+              <FormattedMessage id='info_navbar' />
             </Nav.Link>
             <Nav.Link
               href='#skills'
@@ -67,7 +68,7 @@ export const NavBar = ({ checked, currentLocale, handleChange }) => {
               }
               onClick={() => onUpdateActiveLink('skills')}
             >
-              Skills
+              <FormattedMessage id='skills_header' />
             </Nav.Link>
             <Nav.Link
               href='#projects'
@@ -76,7 +77,7 @@ export const NavBar = ({ checked, currentLocale, handleChange }) => {
               }
               onClick={() => onUpdateActiveLink('projects')}
             >
-              Projects
+              <FormattedMessage id='projects_navbar' />
             </Nav.Link>
           </Nav>
           <span className='navbar-text'>
