@@ -32,7 +32,7 @@ export const NavBar = ({ checked, currentLocale, handleChange }) => {
   return (
     <Navbar expand='md' className={scrolled ? 'scrolled' : ''}>
       <Container>
-        <Navbar.Brand href='/' className='logo'>
+        <Navbar.Brand href='' className='logo'>
           <img src={catIcon} alt='Logo' />
         </Navbar.Brand>
 
@@ -46,7 +46,7 @@ export const NavBar = ({ checked, currentLocale, handleChange }) => {
               type='switch'
               id='custom-switch'
               label={<FormattedMessage id='switch_text' />}
-              checked={checked}
+              checked={!!checked}
               onChange={handleChange}
               className='navbar-switch'
             />
