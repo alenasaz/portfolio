@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import React, { useState } from 'react';
+import { Col, Container, Row } from 'react-bootstrap';
 import contactImg from '../../assets/img/contact-img.svg';
 import './Contact.css';
 
@@ -36,7 +36,7 @@ export const Contact = () => {
     setButtonText('Send');
     let result = response.json();
     setFormDetails(formInitialDetails);
-    if (result.code == 200) {
+    if (result?.code == 200) {
       setStatus({ success: true, message: 'Message sent' });
     } else {
       setStatus({ success: false, message: 'Something went wrong' });
@@ -88,7 +88,7 @@ export const Contact = () => {
                 </Col>
                 <Col sm={6} className='px-1'>
                   <textarea
-                    row='6'
+                    // row='6'
                     type='text'
                     value={formDetails.message}
                     placeholder='Message'
@@ -98,14 +98,14 @@ export const Contact = () => {
                     <span>{buttonText}</span>
                   </button>
                 </Col>
-                {status.message && (
+                {status?.message && (
                   <Col>
                     <p
                       className={
-                        status.message === false ? 'danger' : 'success'
+                        status?.message === false ? 'danger' : 'success'
                       }
                     >
-                      {status.message}
+                      {status?.message}
                     </p>
                   </Col>
                 )}

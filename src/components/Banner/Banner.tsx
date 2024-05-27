@@ -1,8 +1,9 @@
-import { useState, useEffect } from 'react';
-import { Row, Col, Container } from 'react-bootstrap';
-import './Banner.css';
-import Girl from '../../assets/img/gamer.png';
+import React, { useEffect, useState } from 'react';
+import { Col, Container, Row } from 'react-bootstrap';
 import { FormattedMessage } from 'react-intl';
+import Girl from '../../assets/img/gamer.png';
+import './Banner.css';
+
 const toRotate = ['Frontend Developer'];
 
 export const Banner = () => {

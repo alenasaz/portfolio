@@ -1,13 +1,16 @@
-import { useState, useEffect } from 'react';
-import { Navbar, Nav, Container, Form } from 'react-bootstrap';
-import telegramIcon from '../../assets/img/telegram.svg';
-import linkedinIcon from '../../assets/img/linkedin.svg';
-import gitHubIcon from '../../assets/img/github.svg';
-import catIcon from '../../assets/img/cat.svg';
-import './NavBar.css';
+import React, { FC, useEffect, useState } from 'react';
+import { Container, Form, Nav, Navbar } from 'react-bootstrap';
 import { FormattedMessage } from 'react-intl';
+import catIcon from '../../assets/img/cat.svg';
+import gitHubIcon from '../../assets/img/github.svg';
+import linkedinIcon from '../../assets/img/linkedin.svg';
+import telegramIcon from '../../assets/img/telegram.svg';
+import './NavBar.css';
 
-export const NavBar = ({ checked, currentLocale, handleChange }) => {
+export const NavBar: FC<{
+  checked: boolean;
+  handleChange: () => void;
+}> = ({ checked, handleChange }) => {
   const [activeLink, setActiveLink] = useState('home');
   const [scrolled, setScrolled] = useState(false);
 

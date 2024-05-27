@@ -1,6 +1,17 @@
+import React from 'react';
 import { Col } from 'react-bootstrap';
 
-export const ProjectCard = ({ title, desctiption, imgUrl, isMobile }) => {
+export const ProjectCard = ({
+  title,
+  desctiption,
+  imgUrl,
+  isMobile,
+}: {
+  title: string;
+  desctiption?: string;
+  imgUrl: string;
+  isMobile: boolean;
+}) => {
   return (
     <Col sm={isMobile ? 'auto' : 6} md={4}>
       <div className='proj-imgbx'>
@@ -11,7 +22,7 @@ export const ProjectCard = ({ title, desctiption, imgUrl, isMobile }) => {
         />
         <div className='proj-txtx'>
           <h4>{title}</h4>
-          <span>{desctiption}</span>
+          <div>{desctiption}</div>
         </div>
       </div>
     </Col>
