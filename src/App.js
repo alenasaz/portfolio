@@ -1,15 +1,14 @@
 import { useState } from 'react';
 import { IntlProvider } from 'react-intl';
 
-import { NavBar } from './components/NavBar/NavBar.jsx';
-import { Banner } from './components/Banner/Banner.jsx';
-import { Skills } from './components/Skills/Skills.jsx';
-import { Projects } from './components/Projects/Projects.jsx';
-import { Contact } from './components/Contact/Contact.jsx';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css';
+import { Banner } from './components/Banner/Banner.tsx';
+import { NavBar } from './components/NavBar/NavBar.tsx';
+import { Projects } from './components/Projects/Projects.tsx';
+import { Skills } from './components/Skills/Skills.tsx';
 import { LOCALES } from './locales.js';
 import { messages } from './messages.js';
-import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   const locale = LOCALES.RUSSIAN;

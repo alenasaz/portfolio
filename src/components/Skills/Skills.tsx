@@ -1,14 +1,15 @@
+import React from 'react';
+import { Col, Container, Row } from 'react-bootstrap';
+import { FormattedMessage } from 'react-intl';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import { Container, Row, Col, Badge } from 'react-bootstrap';
-import skillsIcon from '../../assets/img/skills_girl.png';
-import reactIcon from '../../assets/img/react.svg';
-import javaScriptIcon from '../../assets/img/javascript.svg';
-import sqlIcon from '../../assets/img/sql.png';
-import graphQLIcon from '../../assets/img/graphql.png';
 import colorSharp from '../../assets/img/color-sharp.png';
 import cssIcon from '../../assets/img/css.png';
-import { FormattedMessage } from 'react-intl';
+import graphQLIcon from '../../assets/img/graphql.png';
+import javaScriptIcon from '../../assets/img/javascript.svg';
+import reactIcon from '../../assets/img/react.svg';
+import skillsIcon from '../../assets/img/skills_girl.png';
+import sqlIcon from '../../assets/img/sql.png';
 import './Skills.css';
 
 const responsive = {
@@ -39,7 +40,6 @@ export const Skills = () => {
           <Col>
             <div className='skill-bx'>
               <h2>
-                {' '}
                 <FormattedMessage id='skills_header' />
               </h2>
               <p>
